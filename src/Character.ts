@@ -19,7 +19,7 @@ class Character implements Fighter {
 
   constructor(
     name: string,
-    race = new Elf(name, Character._random),
+    race: Race = new Elf(name, Character._random),
     archetype: Archetypes = new Mage(name),
   ) {
     this._name = name;
